@@ -27,4 +27,7 @@ coverage
 *.sln
 *.sw?
 
+# Archivos de entorno (variables sensibles)
+.env
+
 *.tsbuildinfo

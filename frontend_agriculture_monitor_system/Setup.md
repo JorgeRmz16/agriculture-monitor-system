@@ -1,6 +1,4 @@
-# Monitor de Plantas
-
-## ¿Cómo levantar el proyecto?
+# Frontend Setup
 
 1. Clona el repositorio:
    ```sh

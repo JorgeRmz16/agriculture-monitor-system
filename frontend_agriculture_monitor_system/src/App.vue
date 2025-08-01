@@ -32,8 +32,9 @@
 import { ref, onMounted } from 'vue';
 import DataCard from './components/DataCard.vue';
 
-const channelID = '3023872'; 
-const readApiKey = '6VI2SEVBWJFE2SOZ';
+const channelID = import.meta.env.VITE_CHANNEL_ID;
+const readApiKey = import.meta.env.VITE_READ_API_KEY;
+console.log('Canal:', channelID, 'API Key:', readApiKey);
 
 const humedadSuelo = ref('Cargando...');
 const temperatura = ref('Cargando...');
