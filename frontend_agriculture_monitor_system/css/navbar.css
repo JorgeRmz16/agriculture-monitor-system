@@ -1,0 +1,29 @@
+.navbar {
+  background: #007bff;
+  padding: 1rem 0;
+  width: 100vw;
+  margin: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.navbar a.router-link-exact-active {
+  text-decoration: underline;
+  color: #ffd700;
+}
