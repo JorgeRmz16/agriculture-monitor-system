@@ -1,5 +1,10 @@
+import { createApp } from 'vue';
 import '../css/styles.css';
-import { createApp } from 'vue'
-import App from './App.vue'
+import '../css/navbar.css';
+import '../css/historico.css';
+import router from './router';
+import Layout from './layouts/Layout.vue';
 
-createApp(App).mount('#app')
+const app = createApp(Layout);
+app.use(router);
+app.mount('#app');
