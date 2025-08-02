@@ -175,18 +175,24 @@ watch(horasSeleccionadas, fetchHistory);
   gap: 2rem;
   margin-bottom: 2rem;
 }
-.chart-item {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  padding: 1.5rem 1rem 1rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .chart-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 @media (max-width: 900px) {
   .charts-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .chart-item {
+    padding: 1rem 0.2rem;
   }
 }
 </style>
