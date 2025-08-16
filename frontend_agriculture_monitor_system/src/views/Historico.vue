@@ -42,7 +42,7 @@ const chartOptions = {
   },
   scales: {
     x: { title: { display: true, text: 'Hora' } },
-    y: { title: { display: true, text: '%' }, min: 30, max: 70 }
+    y: { title: { display: true, text: '%' }, min: 30, max: 80 }
   }
 };
 
@@ -66,7 +66,7 @@ const chartOptionsAir = {
   },
   scales: {
     x: { title: { display: true, text: 'Hora' } },
-    y: { title: { display: true, text: '%' }, min: 30, max: 70 }
+    y: { title: { display: true, text: '%' }, min: 30, max: 80 }
   }
 };
 
@@ -106,7 +106,7 @@ function groupByInterval(feeds, field, intervalMinutes = 5) {
 
 const fetchHistory = async () => {
   try {
-    const resultados = Math.max(500, horasSeleccionadas.value * 12 * 2); // 2x para asegurar margen
+    const resultados = Math.max(500, horasSeleccionadas.value * 12 * 2); 
     const response = await fetch(`https://api.thingspeak.com/channels/${channelID}/feeds.json?api_key=${readApiKey}&results=${Math.round(resultados)}`);
     const data = await response.json();
     if (data && data.feeds) {

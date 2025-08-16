@@ -7,6 +7,9 @@
       <li>
         <router-link to="/historico">Histórico</router-link>
       </li>
+      <li>
+        <router-link to="/mis-plantas">Mis Plantas</router-link>
+      </li>
     </ul>
   </nav>
 </template>
