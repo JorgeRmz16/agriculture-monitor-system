@@ -10,7 +10,7 @@ El proyecto está construido con herramientas y librerías modernas de desarroll
 - **Vue Router** - Enrutador oficial para Vue.js, permitiendo la navegación entre páginas (Home, Histórico, Mis Plantas).
 - **Chart.js** & **vue-chartjs** - Librerías para la visualización de datos y gráficos interactivos (para ver datos históricos y monitoreo).
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto 
 
 ```text
 frontend_agriculture_monitor_system/
