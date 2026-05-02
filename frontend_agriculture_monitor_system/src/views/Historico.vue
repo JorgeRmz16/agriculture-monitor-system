@@ -42,7 +42,7 @@ const chartOptions = {
   },
   scales: {
     x: { title: { display: true, text: 'Hora' } },
-    y: { title: { display: true, text: '%' }, min: 30, max: 80 }
+    y: { title: { display: true, text: '%' }, min: 30, max: 100 }
   }
 };
 
